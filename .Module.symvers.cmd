@@ -1,0 +1,1 @@
+savedcmd_/home/Davjd313/cpufreg_tree_gov/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/Davjd313/cpufreg_tree_gov/Module.symvers -T /home/Davjd313/cpufreg_tree_gov/modules.order -i Module.symvers -e 

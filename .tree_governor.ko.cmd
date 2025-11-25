@@ -1,0 +1,1 @@
+savedcmd_/home/Davjd313/cpufreg_tree_gov/tree_governor.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/Davjd313/cpufreg_tree_gov/tree_governor.ko /home/Davjd313/cpufreg_tree_gov/tree_governor.o /home/Davjd313/cpufreg_tree_gov/tree_governor.mod.o;  true
