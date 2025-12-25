@@ -1,0 +1,1 @@
+savedcmd_/home/Davjd313/ina226_driver/modules.order := {   echo /home/Davjd313/ina226_driver/ina226_i2c.o;   echo /home/Davjd313/ina226_driver/overcurrent_gpio.o; :; } > /home/Davjd313/ina226_driver/modules.order

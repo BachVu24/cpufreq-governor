@@ -1,0 +1,1 @@
+savedcmd_/home/Davjd313/ina226_driver/ina226_i2c.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/Davjd313/ina226_driver/ina226_i2c.ko /home/Davjd313/ina226_driver/ina226_i2c.o /home/Davjd313/ina226_driver/ina226_i2c.mod.o;  true

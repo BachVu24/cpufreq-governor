@@ -1,0 +1,1 @@
+savedcmd_/home/Davjd313/ina226_driver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/Davjd313/ina226_driver/Module.symvers -T /home/Davjd313/ina226_driver/modules.order -i Module.symvers -e 

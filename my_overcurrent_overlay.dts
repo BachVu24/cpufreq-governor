@@ -1,0 +1,33 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2710";
+
+    /* --- Fragment 0: Add INA226 on I2C1 --- */
+    fragment@0 {
+        target = <&i2c1>;
+        __overlay__ {
+	    #address-cells = <1>;
+	    #size-cells = <0>;
+	
+            ina226@40 {
+                compatible = "mycorp,ina226_custom";   /* hoặc "my,ina226" nếu dùng driver riêng */
+                reg = <0x40>;
+                status = "okay";
+            };
+        };
+    };
+
+    /* --- Fragment 1: Overcurrent GPIO driver --- */
+    fragment@1 {
+        target-path = "/";
+        __overlay__ {
+            overcurrent_gpio {
+                compatible = "custom,overcurrent-gpio";
+                gpios = <&gpio 17 0>;    /* GPIO17 input */
+                status = "okay";
+            };
+        };
+    };
+};
